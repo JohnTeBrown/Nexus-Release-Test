@@ -1,5 +1,5 @@
 local function compute_hash(filename)
-    local f = io.open(filename, "rb")
+    local f = io.open(filename, "zip")
     if not f then
         return nil
     end
