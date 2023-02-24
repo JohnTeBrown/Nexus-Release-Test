@@ -12,7 +12,7 @@ int main()
     luaL_dofile(L, "check_file_integrity.lua");
 
     // Call Lua function to check file integrity
-    std::string filename = "Nexus.tar.gz";
+    std::string filename = "../build/Nexus.tar.gz";
     lua_getglobal(L, "check_file_integrity");
     lua_pushstring(L, filename.c_str());
     lua_call(L, 1, 1);
