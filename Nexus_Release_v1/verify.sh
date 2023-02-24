@@ -19,7 +19,7 @@ echo
 echo "🚀  Compiling C++ file..."
 
 # Run gcc on C++ file
-g++ src/test/main.cpp -o bin/output
+gcc src/test/main.cpp -o bin/output
 
 # Print success message
 echo "✅  Compilation complete!"
