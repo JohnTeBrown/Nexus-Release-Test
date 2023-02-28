@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# install clang compiler
+sudo apt install clang -y
+
+
 # Verify file with fancy structure
 echo "Verifying your file"
 echo "===================="
@@ -19,7 +23,7 @@ echo
 echo "🚀  Compiling C++ file..."
 
 # Run gcc on C++ file
-gcc src/test/main.cpp -o bin/output
+clang++ src/test/main.cpp -o bin/output
 
 # Print success message
 echo "✅  Compilation complete!"
