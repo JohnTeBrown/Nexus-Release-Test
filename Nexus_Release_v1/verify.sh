@@ -22,7 +22,7 @@ echo
 # Prints emoji
 echo "🚀  Compiling C++ file..."
 
-# Run gcc on C++ file
+# Runs clang on C++ file
 clang++ src/test/main.cpp -o bin/output
 
 # Print success message
