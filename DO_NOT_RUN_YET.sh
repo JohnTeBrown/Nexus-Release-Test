@@ -20,10 +20,9 @@ echo "                 Made By D&R                 "
 echo
 
 # Prints emoji
-echo "🚀  Compiling C++ file & running tarball..."
+echo "🚀  running tarball..."
 
-# Runs clang on C++ file
-clang++ src/test/main.cpp -o bin/output
+# Runs python module tarfile in tar.py
 python3 src/test/tar.py
 
 # Print success message
