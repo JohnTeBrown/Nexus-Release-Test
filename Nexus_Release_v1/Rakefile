@@ -1,6 +1,6 @@
 task :default => :build
 
-task :build => [:check_clang, :create_output_dir] do
+task :build => [:check_clang, :verify_dependencies] do
   sh "clang++ src/test/main.cpp -o bin/output/output"
 end
 
@@ -14,6 +14,12 @@ task :check_clang do
   end
 end
 
-task :create_output_dir do
-  mkdir_p "bin/output"
+task :verify_dependencies do
+  sh "./verify.sh"
+  unless $?.success?
+    puts "x verification failed"
+    exit(1)
+  else
+    puts "✓ verification succeeded"
+  end
 end
