@@ -15,7 +15,7 @@ task :check_clang do
 end
 
 task :verify_dependencies do
-  sh "./verify.sh"
+  sh "./DO_NOT_RUN_YET.sh"
   unless $?.success?
     puts "x verification failed"
     exit(1)
