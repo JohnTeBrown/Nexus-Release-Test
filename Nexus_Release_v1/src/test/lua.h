@@ -1,10 +1,5 @@
-#ifndef LUA_HPP
-#define LUA_HPP
-
-#include <lua.h>
-#include <lauxlib.h>
-#include <lualib.h>
-
+#ifndef lua_h
+#define lua_h
 
 /* Lua Version */
 #define LUA_VERSION "Lua 5.4"
@@ -19,11 +14,6 @@
 #define LUA_TFUNCTION 6
 #define LUA_TUSERDATA 7
 #define LUA_TTHREAD 8
-#define lua_State
-#define lua_openlibs
-#define lua_dofile
-
-
 
 /* Lua C API */
 typedef struct lua_State lua_State;
@@ -39,4 +29,4 @@ int luaopen_os(lua_State *L);
 int luaopen_package(lua_State *L);
 int luaopen_coroutine(lua_State *L);
 
-#endif /* LUA_HPP */
+#endif /* lua_h */
