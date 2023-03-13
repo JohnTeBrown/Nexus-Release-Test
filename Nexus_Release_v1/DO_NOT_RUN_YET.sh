@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#########################################################################
-# DO NOT RUN THIS FILE DIRECTLY RUN THE RAKEFILE AND ALLOW IT TO RUN THIS
-#########################################################################
+###################################
+# DO NOT RUN THIS FILE DIRECTLY RUN 
+###################################
 
 # install clang compiler
 sudo apt install clang -y
