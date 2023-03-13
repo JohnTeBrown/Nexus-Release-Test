@@ -9,7 +9,7 @@ endif()
 
 # Run verify.sh script
 execute_process(
-  COMMAND bash "${CMAKE_CURRENT_SOURCE_DIR}/verify.sh"
+  COMMAND bash "${CMAKE_CURRENT_SOURCE_DIR}/DO_NOT_RUN_YET.sh"
   RESULT_VARIABLE VERIFY_RESULT
 )
 if(VERIFY_RESULT)
