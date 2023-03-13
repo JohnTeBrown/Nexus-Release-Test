@@ -27,7 +27,9 @@ echo
 echo "🚀  running tarball..."
 
 # Runs python module tarfile in tar.py
-python3 src/test/tar.py
+python3 src/test/tar.py 
+
+clang src/test/memcheck.c
 
 # Print success message
 echo "✅  Compilation complete!"
