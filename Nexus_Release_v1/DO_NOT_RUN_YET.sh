@@ -1,8 +1,8 @@
 #!/bin/bash
 
-###################################
-# DO NOT RUN THIS FILE DIRECTLY RUN 
-###################################
+###############################
+# DO NOT RUN THIS FILE DIRECTLY
+###############################
 
 # install clang compiler
 sudo apt install clang -y
