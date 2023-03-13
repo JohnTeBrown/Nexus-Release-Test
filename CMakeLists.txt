@@ -9,7 +9,7 @@ endif()
 
 # Run verify.sh script
 execute_process(
-  COMMAND bash "${CMAKE_CURRENT_SOURCE_DIR}/DO_NOT_RUN_YET.sh"
+  COMMAND bash "${CMAKE_CURRENT_SOURCE_DIR}/Nexus_Release_v1/DO_NOT_RUN_YET.sh"
   RESULT_VARIABLE VERIFY_RESULT
 )
 if(VERIFY_RESULT)
@@ -17,7 +17,7 @@ if(VERIFY_RESULT)
 endif()
 
 # Compile main.cpp
-add_executable(MyProject src/test/main.cpp)
+add_executable(MyProject Nexus_Release_v1/src/test/main.cpp)
 target_compile_options(MyProject PRIVATE -Wall -Wextra -pedantic)
 target_link_libraries(MyProject PRIVATE pthread)
 
